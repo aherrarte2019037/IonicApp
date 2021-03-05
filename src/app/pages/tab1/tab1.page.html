@@ -1,0 +1,32 @@
+<ion-header ng class="ion-no-border ion-text-center">
+  <ion-toolbar>
+    <ion-title *ngIf="taskList.length !== 0" class="animate__animated animate__backInUp animate__fadeInUp">
+      Lista De Tareas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <app-list [prevRoute]="'allTasks'" [completed]="'all'"></app-list>
+
+  <ion-grid *ngIf="taskList.length === 0" fixed style="height: 100%" class="animate__animated animate__fadeIn">
+    <ion-row class="ion-justify-content-center ion-align-items-center" style="height: 100%; margin-top: -8%">
+
+      <ion-col size="12" class="ion-text-center">
+        <p class="title-no-task">No Tienes Tareas</p>
+        <ion-img style="margin-top: -10%;" src="assets/images/no-task.svg"></ion-img>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+
+<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button (click)="addList()">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

@@ -1,0 +1,71 @@
+ion-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 2px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+ion-list.custom-list {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+ion-item.custom-item {
+    --padding-end: 0;
+    --padding-start: 0;
+    --color: #535353;
+    --highlight-color-focused: #a0a0a0;
+    --highlight-color-valid: #a0a0a0;
+    --inner-padding-end: 0px;
+}
+
+ion-input.custom-input {
+    --color: #535353;
+}
+
+ion-label.custom-label {
+    padding-top: 10px;
+    color: rgb(167, 166, 166);
+}
+
+ion-item.item-has-focus > ion-label{
+    color:  #7a7a7a!important;
+}
+
+ion-checkbox {
+    --background: #ffffff;
+    --background-checked: #8e82f5;
+    --border-color: #8e82f5;
+    --border-color-checked: #8e82f5;
+    --border-radius: 50%;
+    --border-width: 2px;
+    --checkmark-color: #ffffff;
+    --checkmark-width: 1px;
+    --size: 22px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+ion-list-header {
+    --color: #8e82f5;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: -8px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+ion-label.checkbox-label {
+    --color: #8e82f5;
+}
+
+ion-item.checkbox-item {
+    --padding-end: 22px;
+    --padding-start: 18px;
+    --ripple-color: #a19f9f;
+    --border-style: none;
+}
